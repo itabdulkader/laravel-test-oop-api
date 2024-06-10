@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "9058713b-f843-4fc3-b12d-61ad6139bb43",
+		"name": "Laravel Table API",
+		"description": "Collection of API endpoints for managing table data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33108739"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://your-domain/api/users",
+					"protocol": "http",
+					"host": [
+						"your-domain"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/filter?name=v1EJWqI0&email=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "v1EJWqI0",
+							"description": "(Optional) Filter by name"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"description": "(Optional) Filter by email"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
